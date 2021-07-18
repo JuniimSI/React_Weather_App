@@ -21,7 +21,7 @@ function App() {
   }
 
   useEffect(() => {
-    handleGetWeather()
+    //handleGetWeather()
   }, [])
 
   return (
@@ -31,11 +31,13 @@ function App() {
       {/* <header>
         <button onClick={handleGetWeather}>Enviar</button>
       </header> */}
-      <form onSubmit={handleGetWeather}>
-        <input type="text" name="city"/>
-        <button type="submit">Enviar</button>
-      </form>
-
+      <div className="form-content">
+        <form onSubmit={handleGetWeather}>
+          <input type="text" name="city"/>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+        
       {weather && 
         <main>
           <h1>{city}</h1>

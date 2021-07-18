@@ -100,3 +100,14 @@
   font-size: 18px;
   margin-right: 8px;
 }
+
+.form-content {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-content form input{
+  min-width: 400px;
+  margin: 10px;
+}
